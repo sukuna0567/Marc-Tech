@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marc-Tech</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("service_injk9vn");
+    })();
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Marc-Tech</h1>
+    <p>Your ultimate directory for 300+ reliable websites: shopping, streaming, money transfer, business tools, and more.</p>
+    <p>This site was created by Marc-Tech. Click below to follow us:</p>
+    <button onclick="window.location.href='https://instagram.com/j.m.h.2024'">Follow us on Instagram</button>
+  </header>
+
+  <main>
+    <section id="search">
+      <h2>Search for a website</h2>
+      <p>Type what you need: for example “buy clothes”, “watch movies”, “send money”, “create website”... We’ll show you trusted sites that match your request.</p>
+      <input type="text" id="searchInput" placeholder="Search by name or feature..." oninput="searchSites()" />
+    </section>
+
+    <section id="site-list">
+      <h2>Featured Sites (Top 300)</h2>
+      <div id="siteContainer"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section id="testimonials">
+      <h2>Leave a Testimonial</h2>
+      <form id="testimonial-form">
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="testimonial" placeholder="Your feedback about Marc-Tech" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="testimonial-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Marc-Tech. All rights reserved.</p>
+  </footer>
+
+  
+</body>
+</html>
